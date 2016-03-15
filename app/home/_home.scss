@@ -1,0 +1,191 @@
+.home {
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  padding-bottom: 50px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100px;
+    position: relative;
+    background-color: #bbb;
+  .slide-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+    justy-content: center;
+    .banner-header {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 5rem;
+      margin: auto;
+      text-align: center;
+      color: #fff;
+      text-shadow: 4px 4px 6px rgba(#000, .7);
+    }
+  }
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+
+.section-header {
+  color: $blue;
+  margin: 2rem 0;
+  font-family: 'jubilat' !important;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.top-section .section-header {
+  margin: 0 0 1.5rem 0;
+}
+
+section {
+  padding: 0 0 3rem 0;
+}
+
+.button-section {
+  min-height: 212px;
+  padding: 15px;
+  display: block;
+  color: $blue;
+  border: 3px solid $blue;
+  border-radius: 4px;
+  text-decoration: none;
+  .sub-section-header {
+    color: $red;
+  }
+  p {
+    font-size: 1.6rem;
+    font-family: 'jubilat' !important;
+  }
+  span.fa-external-link {
+    visibility: hidden;
+  }
+}
+
+.sub-section {
+  .sub-section-header {
+    font-size: 2rem;
+  }
+  a {
+    @extend .button-section;
+    span.fa-external-link { }
+    &:hover {
+      span.fa-external-link {
+        visibility: visible;
+      }
+    }
+    p { }
+    &:hover, &:focus, &:active {
+      background: $blue;
+      color: #fff;
+      .sub-section-header {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.top-banner {
+  background: $blue;
+  padding: 0;
+  .section-header {
+    color: #fff;
+    font-size: 2.1rem;
+  }
+}
+
+.paypal-logo {
+  display: block;
+  margin: 1rem auto;
+  width: 100px;
+  height: auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: $blue;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  .description, .copyright {
+    text-align: center;
+  }
+  .description {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .copyright {
+    margin: 2rem 0;
+  }
+  ul {
+    text-align: center;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        color: #fff !important;
+        &:hover {
+          color:#fff;
+        }
+      }
+      display: inline-block;
+      padding: 0 1rem;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .sub-section {
+    margin-bottom: 2rem;
+  }
+  .top-section .sub-section:nth-child(3) {
+    float: none;
+    clear: both;
+    margin: 0 auto;
+
+  }
+}
+
+@media screen and (max-width: 794px) {
+  .sub-section {
+    min-height: auto;
+  }
+}
+
+
+@media screen and (min-width: 1060px){
+  .swiper-slide {
+      background-position: 50% 30%;
+  }
+}
+@media screen and (min-width: 1330px){
+  .swiper-slide {
+      background-position: 50% 20%;
+  }
+}
