@@ -14,7 +14,7 @@ module.exports = new (Torso.FormView.extend({
     this.userModel = new Torso.Model({name: 'Kent'});
 
     this.model = new BarcampFormModel();
-    this.model.setTrackedModel('user', this.userModel);
+    this.model.trackModel('user', this.userModel);
     this.model.pull();
 
     this.listenTo(this.userModel, 'change:name', this.updateCurrentName);

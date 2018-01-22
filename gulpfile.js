@@ -54,7 +54,7 @@ buildStyles = function() {
     includePaths: [/*Add scss libraries here*/]
   }).on('error', $.sass.logError))
   .pipe($.concatUtil('app.css'))
-  .pipe($.rucksack({
+  .pipe($.postcss({
     autoprefixer: true
   }))
   .pipe(environment === 'production' ? $.cssmin() : $.util.noop())

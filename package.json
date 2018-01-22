@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "devDependencies": {
     "aliasify": "1.7.2",
-    "backbone-torso": "0.5.0",
+    "backbone-torso": "0.8.7",
     "browser-sync": "2.8.2",
     "browserify": "9.0.8",
     "color-log": "0.0.2",
@@ -17,7 +17,6 @@
     "gulp-notify": "2.2.0",
     "gulp-real-favicon": "^0.2.1",
     "gulp-rimraf": "0.1.1",
-    "gulp-rucksack": "0.1.2",
     "gulp-sass": "2.0.4",
     "gulp-sourcemaps": "1.5.2",
     "gulp-strip-debug": "1.0.2",
@@ -44,6 +43,7 @@
   "dependencies": {
     "bootstrap-sass": "^3.3.6",
     "express": "^4.13.4",
+    "gulp-postcss": "^7.0.1",
     "swiper": "^3.3.0"
   }
 }
